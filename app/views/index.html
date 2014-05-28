@@ -3,36 +3,57 @@
 <head> 
 	<meta charset="UTF-8"> 
 	<title>E-Valuation</title> 
-	<!-- JQUERY --> 
-	<script src="ajax/jquery.min"></script> 
+	
+	<script src="public/ajax/jquery.min"></script> 
 	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script> 
-	<!-- TWITTER BOOTSTRAP CSS --> 
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" /> 
-	<!-- TWITTER BOOTSTRAP JS --> 
-	<script src="js/bootstrap.min.js"></script> 
+	
+	<link href="public/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" /> 
+	
+	<script src="public/bootstrap/js/bootstrap.min.js"></script> 
 </head>
 <body>
-	<h1>Login</h1>
-		<form role="form"  method="post" action="">
-			<div class="form-group">
-				<label for="exampleInputEmail1">E-mail</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
-			</div>
-			<div class="form-group">
-			    <label for="exampleInputPassword1">Senha</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-			</div>
-			<div class="subchck">
-			    <label class="t1-label remember">
-			      	<input type="checkbox" checked="checked" name="remember_me" value="1">
-			      			Lembrar-me
-			      	<span class="separator">·</span>
-			      	<a href="" class="forgot">Esqueceu sua senha?</a>
-			    </label>
-			</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	
+	<div class="container-fluid">
+  		<div class="row-fluid">
+			<h1>Login</h1>
+			<form role="form"  method="post" action="">
+				<div class="form-group">
+					<label for="emailLogin">E-mail</label>
+					<input type="email" class="form-control" id="emailLogin" placeholder="E-mail">
+				</div>
+				<div class="form-group">
+					<label for="senhaLogin">Senha</label>
+					<input type="password" class="form-control" id="senhaLogin" placeholder="Senha">
+				</div>
+				<div class="subchck">
+					<label class="t1-label remember">
+					    <input type="checkbox" checked="checked" name="lembrar-me" value="1">
+					      			Lembrar-me
+					    <span class="separator">·</span>
+					    <a href="" class="forgot">Esqueceu sua senha?</a>
+					</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Logar</button>
+			</form>
+		</div>
+		<div class="row-fluid">
+			<h1>Cadastro</h1>
+			<form role="form"  method="post" action="">
+				<div class="form-group">
+					<label for="nomeCadastro">Nome</label>
+					<input type="name" class="form-control" id="nomeCadastro" placeholder="Nome">
+				</div>
+				<div class="form-group">
+					<label for="emailCadastro">E-mail</label>
+					<input type="email" class="form-control" id="emailCadastro" placeholder="E-mail">
+				</div>
+				<div class="form-group">
+					<label for="senhaCadastro">Senha</label>
+					<input type="password" class="form-control" id="senhaCadastro" placeholder="Senha">
+				</div>
+				<button type="submit" class="btn btn-primary">Cadastrar</button>
+			</form>
+		</div>
+	</div>
 </body>
 
 
