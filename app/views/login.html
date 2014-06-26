@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>E-Valuation Home</title>
+    <title>E-Valuation Login</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
@@ -18,41 +18,44 @@
 </head>
 
 <body data-target=".bs-docs-sidebar" data-spy="scroll" data-twttr-rendered="true">
-
-    <!-- Navbar
+<!-- Navbar
     ================================================== -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">  
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+      </div>
     </div>
-  </div>
 
-  <div class="jumbotron masthead">
+  
+  <header id="overview" class="jumbotron subhead">
     <div class="container">
       <h1>E-Valuation</h1>
-      <p>Seu aplicativo de avaliação estudantil!</p>
-      <p>
-        <a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.2.2']);" class="btn btn-primary btn-large" href="login.html">Faça seu Login</a>
-      </p>
-      <p>
-        <a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.2.2']);" class="btn btn-primary btn-large" href="cadastro.html">Faça seu cadastro</a>
-      </p>
-      <ul class="masthead-links">
-        <li>
-          <a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);" href="http://github.com/twitter/bootstrap">Projeto no Github</a>
-        </li>
-      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span7">
+        <form class="form-signin" role="form">
+            <h2 class="form-signin-heading">Login</h2>
+            <input type="email" class="form-control" placeholder="E-mail" required autofocus>
+            <input type="password" class="form-control" placeholder="Senha" required>
+            <label class="checkbox">
+              <input type="checkbox" value="remember-me"> Lembre-me
+            </label>
+            <button class="btn btn-primary btn-large" type="submit">Logar</button>
+        </form>
+      </div>
     </div>
   </div>
 
   <!-- Footer
-  ================================================== -->
+    ================================================== -->
   <footer class="footer">
     <div class="container">
       <p class="pull-right"><a href="#">Voltar ao topo</a></p>
       <p align="center">Todos direitos reservados à E-Valuation</p>
     </div>
   </footer>
-
 </body>
 
 </html>
