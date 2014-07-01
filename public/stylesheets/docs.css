@@ -248,7 +248,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
   border-bottom: 1px solid #ddd;
 }
 .subhead h1 {
-  font-size: 60px;
+  font-size: 40px;
 }
 .subhead p {
   margin-bottom: 20px;
