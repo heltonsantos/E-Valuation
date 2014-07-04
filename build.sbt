@@ -1,4 +1,4 @@
-name := "e-valuation"
+name := "evaluation"
 
 version := "1.0-SNAPSHOT"
 

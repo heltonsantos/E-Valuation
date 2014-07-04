@@ -2,8 +2,24 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-# Home page
+# Initial page
 GET     /                           controllers.Application.index()
+
+# Log in page
+GET		/login						controllers.Application.login()
+POST	/login						controllers.Application.logon()
+
+# Sign in page
+GET		/cadastro					controllers.Application.signIn()
+POST	/cadastro					controllers.Application.addUser()
+
+# Home page
+GET		/evaluation					controllers.Application.home()
+
+# Pole page
+GET		/novaEnquete				controllers.Application.newPole()
+GET		/enquete					controllers.Application.pole()
+GET		/minhasEnquetes				controllers.Application.myPoles()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

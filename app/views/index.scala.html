@@ -1,7 +1,40 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@main("Bem-vindo ao E-Valuation") {
 
-    @play20.welcome(message, style = "Java")
+
+<!-- Navbar  ================================================== -->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">  
+    </div>
+  </div>
+
+<div class="jumbotron masthead">
+    <div class="container">
+      <h1>E-Valuation</h1>
+      <p>Seu aplicativo de interação estudantil!</p>
+      <p>
+        <a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.2.2']);" class="btn btn-primary btn-large" href="/login">Faça seu Login</a>
+      </p>
+      <p>
+        <a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.2.2']);" class="btn btn-primary btn-large" href="/cadastro">Cadastre-se</a>
+      </p>
+      <ul class="masthead-links">
+        <li>
+          <a onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);" href="http://github.com/twitter/bootstrap">Projeto no Github</a>
+        </li>
+      </ul>
+    </div>
+</div>
+
+
+<!-- Footer
+  ================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+      <p align="center">Todos direitos reservados à E-Valuation</p>
+    </div>
+  </footer>
 
 }
