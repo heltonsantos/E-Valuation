@@ -15,6 +15,8 @@ public class Question extends Model {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private static long id;
 	
+	private String course;
+	private String subject;
 	private String question;
 	private String description;
 	private long fk_user;
@@ -38,7 +40,18 @@ public class Question extends Model {
 	public long getFk_usuario() {
 		return fk_user;
 	}
-	public void setFk_usuario(long fk_usuario) {
-		this.fk_user = fk_usuario;
+	public String getCourse() {
+		return course;
 	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	public String getSubject() {
+		return subject;
+	}
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	
+	
 }

@@ -4,6 +4,7 @@
 
 # Initial page
 GET     /                           controllers.Application.index()
+GET		/deslogar					controllers.Application.deslogar()
 
 # Log in page
 GET		/login						controllers.Application.login()
@@ -16,10 +17,11 @@ POST	/cadastro					controllers.Application.addUser()
 # Home page
 GET		/evaluation					controllers.Application.home()
 
-# Pole page
-GET		/novaEnquete				controllers.Application.newPole()
-GET		/enquete					controllers.Application.pole()
-GET		/minhasEnquetes				controllers.Application.myPoles()
+# Question page
+GET		/novaEnquete				controllers.Application.newQuestion()
+POST	/novaEnquete				controllers.Application.addQuestion()
+GET		/enquete					controllers.Application.question()
+GET		/minhasEnquetes				controllers.Application.myQuestions()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
