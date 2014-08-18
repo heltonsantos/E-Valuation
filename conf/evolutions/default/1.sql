@@ -18,8 +18,6 @@ create table forum (
 ;
 
 create table question (
-  course                    varchar(255),
-  subject                   varchar(255),
   question                  varchar(255),
   description               varchar(255),
   fk_user                   bigint)

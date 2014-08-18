@@ -1,4 +1,4 @@
-@(message: String, questionForm: Form[entities.Question])
+@(message: String)
 @import helper._
 
 @main("Cadastro E-Valuation"){
@@ -37,7 +37,7 @@
               <a href=""><i class="icon-wrench icon-white"></i> Opções</a>
             </li>
             <li class="">
-              <a href="/deslogar"><i class="icon-off icon-white"></i> Deslogar</a>
+              <a href=""><i class="icon-off icon-white"></i> Deslogar</a>
             </li>
             
             <form action="" class="navbar-search pull-left">
@@ -51,11 +51,11 @@
   </div>
 
 <div class="container">
-    <form role="form" action="@routes.Application.addQuestion()" method="post" >
+    <form role="form">
       <h2 class="form-signin-heading">Nova enquete</h2>
       <div class="form-group">
         <label for="Cursos">Cursos</label>
-        <select id="course" name="course" class="form-control">
+        <select name="cursos" id="cursos" class="form-control">
           <option value="Engenharia Civil">Engenharia Civil</option>
           <option value="Sistemas de Informação">Sistemas de Informação</option>
           <option value="Ciência da Computação">Ciência da Computação</option>
@@ -66,7 +66,7 @@
       </div>
       <div class="form-group">
         <label for="Cadeiras">Cadeiras</label>
-        <select name="subject" id="subject" class="form-control">
+        <select name="cadeiras" id="cadeiras" class="form-control">
           <option value="Introdução a Sistemas de Informação">Introdução a Sistemas de Informação</option>
           <option value="Introdução a Ciência da Computação">Introdução a Ciência da Computação</option>
           <option value="Introdução a Engenharia da Computação">Introdução a Engenharia da Computação</option>
@@ -74,14 +74,13 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="Tema">Assunto</label>
-        <input type="text" class="form-control" id="question" name="question" placeholder="Insira o assunto ou pergunta" style=" width: 800px">
+        <label for="Tema">Tema</label>
+        <input type="text" class="form-control" id="tema" placeholder="Insira o tema" style=" width: 800px">
       </div>
       <div class="form-group">
         <label for="Descricao">Descrição</label>
-        <input type="text" class="form-control" id="description" name="description" placeholder="Escreva a descrição" style=" width: 1000px">
+        <input type="text" class="form-control" id="descricao" placeholder="Escreva a descrição" style=" width: 1000px">
       </div>
-      <input type="hidden" name="fk_user" id="fk_user" value="0">
     
       <button type="submit" class="btn btn-default"><i class="icon-ok icon-black"></i> Finalizar</button>
     </form>
